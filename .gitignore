@@ -1,0 +1,17 @@
+# 로컬 설정 (API 키, 로그인 비밀번호) — 절대 올리지 않음
+mg.properties
+
+# 실행 기록, 빌드 결과
+runs/
+out/
+out-test/
+target/
+.maven/
+
+# IDE
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.vscode/

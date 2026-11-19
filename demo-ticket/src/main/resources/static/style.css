@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f6f8; color: #1b1f24; font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', system-ui, sans-serif; font-size: 15px; line-height: 1.55; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: #14213d; color: #fff; }
+.brand { font-size: 20px; font-weight: 700; }
+.brand .sub { font-size: 13px; font-weight: 400; color: #c7cdd6; margin-left: 8px; }
+.who { font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.mode { padding: 6px 24px; font-size: 13px; }
+.mode.vuln { background: #fdecec; color: #8a1f1f; }
+.mode.fixed { background: #e6f5ec; color: #14532d; }
+main { max-width: 1100px; margin: 20px auto; padding: 0 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.card { background: #fff; border: 1px solid #e2e6eb; border-radius: 10px; padding: 18px; }
+.card h2 { margin: 0 0 12px; font-size: 17px; }
+.list { display: flex; flex-direction: column; gap: 8px; }
+.item { border: 1px solid #eceff3; border-radius: 8px; padding: 10px 12px; }
+.muted { color: #5b6470; font-size: 13px; }
+label { display: block; margin-bottom: 10px; font-size: 13px; color: #5b6470; }
+select, input { display: block; width: 100%; margin-top: 4px; padding: 8px 10px; border: 1px solid #d5dae1; border-radius: 8px; font: inherit; color: #1b1f24; }
+input[readonly] { background: #f3f4f6; }
+.btn { display: inline-block; border: 1px solid #d5dae1; background: #fff; border-radius: 8px; padding: 8px 14px; font: inherit; cursor: pointer; text-decoration: none; color: inherit; }
+.btn.primary { background: #2f5bea; border-color: #2f5bea; color: #fff; }
+.btn.small { padding: 3px 9px; font-size: 12px; margin-top: 6px; }
+.inline { display: inline; margin: 0; }
+.result { margin-top: 10px; font-size: 14px; }
+.err { color: #b42318; font-size: 13px; }
+.accounts { padding-left: 18px; }
+footer { max-width: 1100px; margin: 24px auto; padding: 0 24px; color: #6b7280; font-size: 12.5px; }

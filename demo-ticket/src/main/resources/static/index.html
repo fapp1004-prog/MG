@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>티켓온 (MG 시연용 데모)</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">티켓온 <span class="sub">MG 시연용 데모 예매 서비스</span></div>
+  <div class="who" id="who">확인 중…</div>
+</header>
+<div class="mode" id="mode"></div>
+
+<main>
+  <section class="card" id="loginBox" hidden>
+    <h2>로그인이 필요합니다</h2>
+    <p>시연용 계정 (비밀번호는 모두 <b>1234</b>)</p>
+    <ul class="accounts">
+      <li><b>user1</b> · 일반 사용자</li>
+      <li><b>user2</b> · 일반 사용자</li>
+      <li><b>admin</b> · 관리자</li>
+    </ul>
+    <a class="btn primary" href="/login">로그인하러 가기</a>
+  </section>
+
+  <div class="grid" id="app" hidden>
+    <section class="card">
+      <h2>내 예매</h2>
+      <div id="bookings" class="list"></div>
+    </section>
+    <section class="card">
+      <h2>좌석 결제</h2>
+      <label>좌석
+        <select id="seat"></select>
+      </label>
+      <label>가격
+        <input id="price" readonly>
+      </label>
+      <button class="btn primary" id="pay">결제</button>
+      <div id="payResult" class="result"></div>
+    </section>
+    <section class="card">
+      <h2>공연 목록</h2>
+      <div id="concerts" class="list"></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  이 사이트는 MG(배포 전 권한 검사 누락 점검기) 시연을 위해 일부러 서버 측 검사를 빠뜨린 코드를 포함합니다. 내 PC에서만 실행하세요.
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>

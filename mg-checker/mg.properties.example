@@ -1,0 +1,34 @@
+# MG 설정 파일 예시
+# 이 파일을 같은 폴더에 mg.properties 로 복사해서 쓰세요. (run.bat을 처음 실행하면 자동으로 복사해 줍니다)
+# mg.properties 에는 API 키가 들어가므로 깃허브 등에 올리지 마세요.
+
+# 공급자: anthropic | openai | mock
+#  - 비워 두면 키 모양으로 자동 선택 (sk-ant- 로 시작하면 anthropic, 그 밖의 sk- 는 openai)
+#  - mock: 키 없이 화면과 흐름만 확인 (실제 LLM 아님, 키워드 흉내)
+provider=
+
+# API 키를 = 뒤에 붙여 넣으세요
+api.key=
+
+# 모델. 비워 두면 기본값 (anthropic: claude-sonnet-5-5 / openai: gpt-5-mini)
+model=
+
+# 화면 주소 포트 (바꾸면 브라우저에서 http://127.0.0.1:포트 로 접속)
+port=8090
+
+# 응답 최대 길이 (토큰)
+#max.tokens=8192
+
+# 온도. anthropic 기본값 0 (같은 입력에 최대한 같은 답). openai gpt-5 계열은 비워 두세요.
+#temperature=0
+
+# LLM 호출 제한 시간(초)
+#timeout.seconds=180
+
+# 화면 로그인
+#  - login.password 를 비워 두면 실행할 때마다 임시 비밀번호를 만들어 콘솔(cmd)에 보여 줍니다.
+#  - 고정하려면 직접 정하세요 (8자 이상 권장). 이 서버는 127.0.0.1 에서만 열립니다.
+login.user=admin
+login.password=
+# 로그인 유지 시간(시간)
+#session.hours=8
